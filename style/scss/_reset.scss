@@ -1,0 +1,37 @@
+// Colors
+$black: #000;
+$white: #fff;
+$green: #9ac5bb;
+$gray-light: #ededed;
+$gray-dark: #141414;
+
+// Font-family
+$font: 'Nunito', sans-serif;
+$font-title: 'Kanit', sans-serif;
+
+// Font-size
+// $font-size-title
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+}
+
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+
+
+  @media (max-width: 500px) {
+    padding: 0 20px;
+  }
+}
