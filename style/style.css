@@ -106,6 +106,8 @@ body {
 }
 .benefits__wrapper {
   padding: 30px 0;
+  display: flex;
+  gap: 20px;
 }
 .benefits__titles p {
   text-transform: uppercase;
@@ -127,7 +129,8 @@ body {
   flex-direction: column;
 }
 .benefits .desconts img {
-  width: 200px;
+  width: 550px;
+  margin-left: 40px;
 }
 .benefits .desconts span {
   text-align: center;
@@ -258,6 +261,12 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 1250px) {
+  .benefits .desconts img {
+    width: 550px;
+    margin-left: 20px;
+  }
+}
 @media (max-width: 1100px) {
   .banner__desktop {
     display: none;
@@ -340,6 +349,37 @@ body {
     background: #141414;
     color: #fff;
     border: none;
+  }
+}
+@media (max-width: 880px) {
+  .benefits {
+    background: #fff;
+    width: 100%;
+  }
+  .benefits__wrapper {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .benefits .desconts {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .benefits .desconts__items {
+    display: flex;
+    flex-direction: column;
+  }
+  .benefits .desconts img {
+    width: 550px;
+    margin-left: 20px;
+  }
+  .benefits .desconts span {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
 @media (max-width: 800px) {
@@ -614,7 +654,7 @@ body {
   }
   .benefits .desconts img {
     width: 100%;
-    max-width: 150px;
+    margin-left: 0;
   }
   .benefits .desconts span {
     text-align: center;
@@ -646,9 +686,6 @@ body {
     height: 100%;
     gap: 10px;
     flex: 1;
-  }
-  .benefits .desconts img {
-    width: 100px;
   }
   .benefits .desconts span {
     text-align: center;
