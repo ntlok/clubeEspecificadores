@@ -41,6 +41,7 @@ body {
 .banner__desktop__wrapper {
   display: flex;
   justify-content: space-between;
+  position: relative;
   align-items: center;
   gap: 80px;
 }
@@ -48,6 +49,10 @@ body {
   .banner__desktop__wrapper {
     gap: 20px;
   }
+}
+.banner__desktop__details {
+  position: absolute;
+  width: 566px;
 }
 .banner__desktop__title {
   font-size: 48px;
@@ -87,14 +92,13 @@ body {
 }
 .banner__desktop__img {
   width: 100%;
+  height: 500px;
 }
 .banner__desktop__img img {
   height: 500px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: left;
-     object-position: left;
 }
 .banner__mobile {
   display: none;
@@ -277,16 +281,9 @@ body {
   .banner__mobile__wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
-    gap: 80px;
   }
-}
-@media (max-width: 1100px) and (max-width: 1300px) {
-  .banner__mobile__wrapper {
-    gap: 20px;
-  }
-}
-@media (max-width: 1100px) {
   .banner__mobile__title {
     font-size: 48px;
     font-weight: 400;
@@ -299,11 +296,11 @@ body {
     text-transform: uppercase;
     font-size: 68px;
   }
-}
-@media (max-width: 1100px) {
   .banner__mobile__details {
     flex: 1;
     width: 100%;
+    position: absolute;
+    z-index: 999;
     max-width: 650px;
   }
   .banner__mobile__details p {
@@ -311,16 +308,15 @@ body {
     margin-top: 10px;
     font-weight: 600;
   }
-}
-@media (max-width: 1100px) {
   .banner__mobile__img {
     width: 100%;
     position: relative;
     display: flex;
+    margin-top: 30px;
     justify-content: center;
   }
   .banner__mobile__img img {
-    max-width: 660px;
+    max-width: 720px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -664,6 +660,33 @@ body {
   }
 }
 @media (max-width: 510px) {
+  .banner__desktop {
+    display: none;
+  }
+  .banner__mobile {
+    display: flex;
+  }
+  .banner__mobile__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+  .banner__mobile__img {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .banner__mobile__img img {
+    max-width: 720px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
   .benefits__titles p {
     text-transform: uppercase;
     font-size: 14px;
@@ -813,5 +836,28 @@ body {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 600;
+  }
+}
+@media (max-width: 450px) {
+  .banner__desktop {
+    display: none;
+  }
+  .banner__mobile {
+    display: flex;
+  }
+  .banner__mobile__img {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+  }
+  .banner__mobile__img img {
+    max-width: 720px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
 }/*# sourceMappingURL=style.css.map */
